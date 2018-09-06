@@ -4,7 +4,7 @@
  - Start the mongoDB server using the command `mongod` in the terminal
  - Start the mongoDB interactive shell using the command `mongo` on a separate terminal.
 
- - > **NOTE** : Sometimes the mongod server is already running in the backgroud. So first just try running the command in the second step. If it doesn't work then start the server then start the interactive shell
+ - > **NOTE** : Sometimes the mongod server is already running in the backgroud. So first just try running the command mentioned in the second step. If it doesn't work then start the server and the interactive shell one after another respectively.
 
 After sucessfully entering the interactive shell try out the following stuff :
 
@@ -49,23 +49,23 @@ After sucessfully entering the interactive shell try out the following stuff :
  - In `mongoDB` when you make an entry in a collection that entry is called a _document_ i.e. a _row_ in terms of `SQL`
  - You can insert a document in a collection using the command `db.collection_name.insert(data)`
  - Structure of the data in the example below :-
-   - brand
-   - model_name
-   - type
-   - engine
-     - fuel
-     - cc
-     - bhp
-   - color
-   - safety
-     - airbag (if airbags isn't present then this field is omitted else its type is associated with the _key_)
-     - sb_warn (seatbelt warning)
+    - brand
+    - model_name
+    - type
+    - engine
+        - fuel
+        - cc
+        - bhp
+    - color
+    - safety
+        - airbag (if airbags isn't present then this field is omitted else its type is associated with the _key_)
+        - sb_warn (seatbelt warning)
  - Eg:-
     ```js
     db.car_details.insert(
         {
             'brand': 'chevrolet',
-                'model_name': 'beat',
+            'model_name': 'beat',
             'type': 'hatchback',
             'engine': {
                 'fuel': 'petrol',
@@ -159,27 +159,129 @@ After sucessfully entering the interactive shell try out the following stuff :
     ]}).pretty()
     ```
 
-**sort()**
- - Sort funtion can be used to sort the result of the query based on a key
- - For ascending set the value of the key to 1
-   and for descending set it to -1
- - Eg:- SORT (desc)
-    ```js
-    db.car_details.find().sort(
-        {'price' : -1}
-    ).pretty()
-    ```
+#### Functions
 
-**limit()**
- - To limit the no of results of the query send the no of results to be displayed as a parameter to the limit function
- - Eg:-
-    ```js
-    db.car_details.find().limit(3).pretty()
-    ```
+ - **sort()**
+    - Sort funtion can be used to sort the result of the query based on a key
+    - For ascending set the value of the key to 1
+    and for descending set it to -1
+    - Eg:- SORT (desc)
+        ```js
+        db.car_details.find().sort(
+            {'price' : -1}
+        ).pretty()
+        ```
 
-**count()**
- - To just display the no of results that the query will output the `count()` function can be used
- - Eg:-
-    ```js
-    db.car_details.find().count()
-    ```
+ - **limit()**
+    - To limit the no of results of the query, send the no of results to be displayed as a parameter to the limit function
+    - Eg:-
+        ```js
+        db.car_details.find().limit(3).pretty()
+        ```
+
+ - **count()**
+    - To just display the no of results that the query will output the `count()` function can be used
+    - Eg:-
+        ```js
+        db.car_details.find().count()
+        ```
+
+#### Miscellaneous
+
+ - **$exists**
+   - To check whether a key exists in the documents in the collections the $exists specifier
+   - Eg:-
+        ```js
+        db.car_details.find({
+            'safety.airbags': {'$exists' : true}
+        }).pretty()
+        ```
+
+ - **$regex**
+   - Regular expressions can also be used to find entries having a pattern using the $regex specifier
+   - Eg:-
+        ```js
+        db.car_details.find({
+            'model_name' : { $regex: /^e/ }
+        }).pretty()
+
+        ```
+
+## <ins>UPDATE</ins>
+
+ - There are 3 functions associated to updation of documents in mongoDB :-
+   - **updateOne()**
+      This method is used to update the first matching document based on the filters provided
+
+      Eg:-
+      ```js
+      db.car_details.updateOne(
+          { 'model_name' : 'cruze' },
+          { '$set' : { 'price' : 1500000 } }
+      )
+      ```
+
+   - **updateMany()**
+      This method is used to update all the matching documents based on the filters provided
+      Eg:-
+      ```js
+      db.car_details.updateMany(
+          { },
+          { '$rename' : { 'body_type' : 'type' } }
+      )
+      ```
+   - **replaceOne()**
+      This method is used to update the first matching document based on the filters provided
+      Eg:-
+      ```js
+      db.car_details.replaceOne(
+        { 'model_name' : 'jazz' },
+        {
+            'brand': 'honda',
+            'model_name': 'jazz',
+            'type': 'hatchback',
+            'engine': {
+                'fuel': 'diesel',
+                'cc': 1150,
+                'bhp': 115
+            },
+            'color': ['silver','orange','white'],
+            'safety': {
+                'airbags' : 'front',
+                'sb_warn': true
+            },
+            'price' : 750000
+        }
+      )
+      ```
+
+## <ins>DELETE</ins>
+
+ - One or many documents can be deleted in mongoDb using the following commands:-
+   - **deleteOne()**
+   This method deletes the first document that matches the conditions specified
+   Eg:-
+   ```js
+   db.car_details.deleteOne(
+          { 'model_name' : 'city' },
+   )
+   ```
+
+   - **deleteMany()**
+   This method deletes the all the documents that match the conditions specified. If no conditions are specified the all documents in the collection are deleted.
+   Eg:-
+   ```js
+   db.car_details.deleteMany(
+          { 'body_type' : 'suv' },
+   )
+   ```
+
+----
+
+### Resources
+ - [MongoDB official Documentation](https://docs.mongodb.com/)
+ - [MongoDB Tutorials Point](https://www.tutorialspoint.com/mongodb/index.htm)
+ - [Marvels of MongoDB (pluralsight) slides](https://github.com/manuabalos/Codeschool---The-Magical-Marvels-of-MongoDB)
+
+
+> **NOTE** : The official documentation is more than sufficient to get a hold of both basic and advanced concepts in mondoDB as they have an exhaustive no. of examples associated with every functionality. So, first have a look at the documentation before searching for a tutorial.

@@ -2,7 +2,7 @@ db.car_details.insert(
     [
         {
             'brand': 'chevrolet',
-                'model_name': 'cruze',
+            'model_name': 'cruze',
             'type': 'sedan',
             'engine': {
                 'fuel': 'diesel',
@@ -18,7 +18,7 @@ db.car_details.insert(
         },
         {
             'brand': 'ford',
-                'model_name': 'torino',
+            'model_name': 'torino',
             'type': 'convertible',
             'engine': {
                 'fuel': 'petrol',
@@ -34,7 +34,7 @@ db.car_details.insert(
         },
         {
             'brand': 'honda',
-                'model_name': 'city',
+            'model_name': 'city',
             'type': 'sedan',
             'engine': {
                 'fuel': 'petrol',
@@ -50,7 +50,7 @@ db.car_details.insert(
         },
         {
             'brand': 'toyota',
-                'model_name': 'fortuner',
+            'model_name': 'fortuner',
             'type': 'suv',
             'engine': {
                 'fuel': 'diesel',
@@ -66,7 +66,7 @@ db.car_details.insert(
         },
         {
             'brand': 'ford',
-                'model_name': 'endeavour',
+            'model_name': 'endeavour',
             'type': 'suv',
             'engine': {
                 'fuel': 'diesel',
@@ -82,7 +82,7 @@ db.car_details.insert(
         },
         {
             'brand': 'ford',
-                'model_name': 'ecosport',
+            'model_name': 'ecosport',
             'type': 'mini suv',
             'engine': {
                 'fuel': 'petrol',
@@ -98,7 +98,7 @@ db.car_details.insert(
         },
         {
             'brand': 'ford',
-                'model_name': 'mustang',
+            'model_name': 'mustang',
             'type': 'convertible',
             'engine': {
                 'fuel': 'petrol',
@@ -114,7 +114,7 @@ db.car_details.insert(
         },
         {
             'brand': 'honda',
-                'model_name': 'jazz',
+            'model_name': 'jazz',
             'type': 'hatchback',
             'engine': {
                 'fuel': 'petrol',
