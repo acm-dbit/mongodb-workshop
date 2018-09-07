@@ -26,13 +26,17 @@ After sucessfully entering the interactive shell try out the following stuff :
     show dbs
     ```
  - Result:
-    ```js
+    ```
     admin   0.000GB
     config  0.000GB
     local   0.000GB
     temp    0.000GB
     ```
 > **NOTE** : The _cars_ db created in the earlier command isn't visible as it has no data in it. Once a [collection](#creating-collections) is created it will be visible on executing the above command.
+ - To view the database you are currently using enter:-
+    ```js
+    db
+    ```
 
 #### Creating collections
  - Collections are in `mongoDB` what tables are in `SQL`.
@@ -257,6 +261,7 @@ After sucessfully entering the interactive shell try out the following stuff :
 
 ## <ins>DELETE</ins>
 
+#### Deleting documents
  - One or many documents can be deleted in mongoDb using the following commands:-
    - **deleteOne()**
    This method deletes the first document that matches the conditions specified
@@ -276,6 +281,19 @@ After sucessfully entering the interactive shell try out the following stuff :
    )
    ```
 
+#### Deleting collections
+ - To delete a collection enter `db.collection_name.drop()`
+ - Eg:-
+   ```js
+   db.car_details.drop()
+   ```
+
+#### Deleting databases
+
+ - To delete the database you are currently working on enter :-
+   ```js
+   db.dropDatabase()
+   ```
 ----
 
 ### Resources
