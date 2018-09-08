@@ -268,7 +268,7 @@ After sucessfully entering the interactive shell try out the following stuff :
    Eg:-
    ```js
    db.car_details.deleteOne(
-          { 'model_name' : 'city' },
+          { 'model_name' : 'city' }
    )
    ```
 
@@ -277,7 +277,7 @@ After sucessfully entering the interactive shell try out the following stuff :
    Eg:-
    ```js
    db.car_details.deleteMany(
-          { 'body_type' : 'suv' },
+          { 'body_type' : 'suv' }
    )
    ```
 
