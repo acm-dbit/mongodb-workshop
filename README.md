@@ -62,7 +62,7 @@ After sucessfully entering the interactive shell try out the following stuff :
         - bhp
     - color
     - safety
-        - airbag (if airbags isn't present then this field is omitted else its type is associated with the _key_)
+        - airbag (if airbags isn't present then this field is omitted else its type(i.e. airbag type, for eg:- front/front and rear) is associated with the _key_)
         - sb_warn (seatbelt warning)
  - Eg:-
     ```js
@@ -264,22 +264,23 @@ After sucessfully entering the interactive shell try out the following stuff :
 #### Deleting documents
  - One or many documents can be deleted in mongoDb using the following commands:-
    - **deleteOne()**
-   This method deletes the first document that matches the conditions specified
-   Eg:-
-   ```js
-   db.car_details.deleteOne(
-          { 'model_name' : 'city' }
-   )
-   ```
+     - This method deletes the first document that matches the conditions specified
+     - Eg:-
+       ```js
+       db.car_details.deleteOne(
+              { 'model_name' : 'city' }
+       )
+       ```
 
    - **deleteMany()**
-   This method deletes the all the documents that match the conditions specified. If no conditions are specified the all documents in the collection are deleted.
-   Eg:-
-   ```js
-   db.car_details.deleteMany(
-          { 'body_type' : 'suv' }
-   )
-   ```
+     - This method deletes the all the documents that match the conditions specified. If no conditions are specified the all documents in the collection are deleted.
+   
+     - Eg:-
+       ```js
+       db.car_details.deleteMany(
+              { 'body_type' : 'suv' }
+       )
+       ```
 
 #### Deleting collections
  - To delete a collection enter `db.collection_name.drop()`
@@ -302,4 +303,4 @@ After sucessfully entering the interactive shell try out the following stuff :
  - [Marvels of MongoDB (pluralsight) slides](https://github.com/manuabalos/Codeschool---The-Magical-Marvels-of-MongoDB)
 
 
-> **NOTE** : The official documentation is more than sufficient to get a hold of both basic and advanced concepts in mondoDB as they have an exhaustive no. of examples associated with every functionality. So, first have a look at the documentation before searching for a tutorial.
+> **NOTE** : The official documentation is more than sufficient to get a hold of both basic and advanced concepts in mongoDB as they have an exhaustive no. of examples associated with every functionality. So,it is recommended to first have a look at the documentation before searching for a tutorial.
