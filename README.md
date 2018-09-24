@@ -136,7 +136,7 @@ After sucessfully entering the interactive shell try out the following stuff :
 
 #### Logical Operators
 
- - Logical operators can be used to filter documents in monogDB using the following specifications:-
+ - Logical operators can be used to filter documents in mongoDB using the following specifications:-
    - **$or** = OR operation
    - **$and*** = AND operation
 
@@ -147,7 +147,7 @@ After sucessfully entering the interactive shell try out the following stuff :
         { 'price' : { '$gte' : 500000 } }
     ]}).pretty()
     ```
-    > Notice that the following command wil also output the same as the previous as the default operation in case of multiple filters is an _AND_ operation.
+    > Notice that the following command will also output the same result as the previous, this is because the default operation in case of multiple filters is an _AND_ operation.
  - Eg:- (AND)(without the **$and** specifier)
     ```js
     db.car_details.find({
@@ -166,7 +166,7 @@ After sucessfully entering the interactive shell try out the following stuff :
 #### Functions
 
  - **sort()**
-    - Sort funtion can be used to sort the result of the query based on a key
+    - Sort function can be used to sort the result of the query based on a key
     - For ascending set the value of the key to 1
     and for descending set it to -1
     - Eg:- SORT (desc)
@@ -177,7 +177,7 @@ After sucessfully entering the interactive shell try out the following stuff :
         ```
 
  - **limit()**
-    - To limit the no of results of the query, send the no of results to be displayed as a parameter to the limit function
+    - To limit the no. of results of the query, send the no of results to be displayed as a parameter to the limit function
     - Eg:-
         ```js
         db.car_details.find().limit(3).pretty()
@@ -303,4 +303,4 @@ After sucessfully entering the interactive shell try out the following stuff :
  - [Marvels of MongoDB (pluralsight) slides](https://github.com/manuabalos/Codeschool---The-Magical-Marvels-of-MongoDB)
 
 
-> **NOTE** : The official documentation is more than sufficient to get a hold of both basic and advanced concepts in mongoDB as they have an exhaustive no. of examples associated with every functionality. So,it is recommended to first have a look at the documentation before searching for a tutorial.
+> **NOTE** : The official documentation is more than sufficient to get a hold of both basic and advanced concepts in mongoDB as they have an exhaustive no. of examples associated with every functionality. So, it is recommended to first have a look at the documentation before searching for a tutorial.
