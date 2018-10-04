@@ -215,9 +215,8 @@ After sucessfully entering the interactive shell try out the following stuff :
 
  - There are 3 functions associated to updation of documents in mongoDB :-
    - **updateOne()**
-      This method is used to update the first matching document based on the filters provided
-
-      Eg:-
+     - This method is used to update the first matching document based on the filters provided
+     - Eg:-
       ```js
       db.car_details.updateOne(
           { 'model_name' : 'cruze' },
@@ -226,8 +225,8 @@ After sucessfully entering the interactive shell try out the following stuff :
       ```
 
    - **updateMany()**
-      This method is used to update all the matching documents based on the filters provided
-      Eg:-
+     - This method is used to update all the matching documents based on the filters provided
+     - Eg:-
       ```js
       db.car_details.updateMany(
           { },
@@ -235,8 +234,8 @@ After sucessfully entering the interactive shell try out the following stuff :
       )
       ```
    - **replaceOne()**
-      This method is used to update the first matching document based on the filters provided
-      Eg:-
+     - This method is used to update the first matching document based on the filters provided
+     - Eg:-
       ```js
       db.car_details.replaceOne(
         { 'model_name' : 'jazz' },
