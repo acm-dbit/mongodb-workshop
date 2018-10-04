@@ -217,46 +217,46 @@ After sucessfully entering the interactive shell try out the following stuff :
    - **updateOne()**
      - This method is used to update the first matching document based on the filters provided
      - Eg:-
-      ```js
-      db.car_details.updateOne(
-          { 'model_name' : 'cruze' },
-          { '$set' : { 'price' : 1500000 } }
-      )
-      ```
+       ```js
+       db.car_details.updateOne(
+           { 'model_name' : 'cruze' },
+           { '$set' : { 'price' : 1500000 } }
+       )
+       ```
 
    - **updateMany()**
      - This method is used to update all the matching documents based on the filters provided
      - Eg:-
-      ```js
-      db.car_details.updateMany(
-          { },
-          { '$rename' : { 'body_type' : 'type' } }
-      )
-      ```
+       ```js
+       db.car_details.updateMany(
+           { },
+           { '$rename' : { 'body_type' : 'type' } }
+       )
+       ```
    - **replaceOne()**
      - This method is used to update the first matching document based on the filters provided
      - Eg:-
-      ```js
-      db.car_details.replaceOne(
-        { 'model_name' : 'jazz' },
-        {
-            'brand': 'honda',
-            'model_name': 'jazz',
-            'type': 'hatchback',
-            'engine': {
-                'fuel': 'diesel',
-                'cc': 1150,
-                'bhp': 115
-            },
-            'color': ['silver','orange','white'],
-            'safety': {
-                'airbags' : 'front',
-                'sb_warn': true
-            },
-            'price' : 750000
-        }
-      )
-      ```
+       ```js
+       db.car_details.replaceOne(
+         { 'model_name' : 'jazz' },
+         {
+             'brand': 'honda',
+             'model_name': 'jazz',
+             'type': 'hatchback',
+             'engine': {
+                 'fuel': 'diesel',
+                 'cc': 1150,
+                 'bhp': 115
+             },
+             'color': ['silver','orange','white'],
+             'safety': {
+                 'airbags' : 'front',
+                 'sb_warn': true
+             },
+             'price' : 750000
+         }
+       )
+       ```
 
 ## <ins>DELETE</ins>
 
