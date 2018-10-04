@@ -138,7 +138,7 @@ After sucessfully entering the interactive shell try out the following stuff :
 
  - Logical operators can be used to filter documents in mongoDB using the following specifications:-
    - **$or** = OR operation
-   - **$and*** = AND operation
+   - **$and** = AND operation
 
  - Eg:- (AND)
     ```js
