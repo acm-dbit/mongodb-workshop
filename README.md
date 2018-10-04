@@ -273,7 +273,7 @@ After sucessfully entering the interactive shell try out the following stuff :
        ```
 
    - **deleteMany()**
-     - This method deletes the all the documents that match the conditions specified. If no condition is specified the all documents in the collection are deleted.
+     - This method deletes the all the documents that match the conditions specified. If no condition is specified then all documents in the collection are deleted.
    
      - Eg:-
        ```js
@@ -291,7 +291,7 @@ After sucessfully entering the interactive shell try out the following stuff :
 
 #### Deleting databases
 
- - To delete the database you are currently working on enter :-
+ - To delete the database you are currently working on, enter :-
    ```js
    db.dropDatabase()
    ```
