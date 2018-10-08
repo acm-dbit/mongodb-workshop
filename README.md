@@ -1,6 +1,6 @@
 # MongoDB
 
-### Prerequisites
+## Prerequisites
  - Start the mongoDB server using the command `mongod` in the terminal
  - Start the mongoDB interactive shell using the command `mongo` on a separate terminal.
 
