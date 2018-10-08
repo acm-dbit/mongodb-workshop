@@ -13,7 +13,7 @@ After sucessfully entering the interactive shell try out the following stuff :
 ## Contents
  - [CREATE](#create)
    - [Creating a database](#creating-a-database)
-   - [List databses](#list-databases)
+   - [List databases](#list-databases)
    - [Creating collections](#creating-collections)
    - [Inserting documents](#inserting-documents)
  - [READ](#read)
