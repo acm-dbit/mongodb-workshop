@@ -10,6 +10,25 @@ After sucessfully entering the interactive shell try out the following stuff :
 
 ---
 
+## Contents
+ - [CREATE](#create)
+   - [Creating a database](#creating-a-database)
+   - [List databses](#list-databases)
+   - [Creating collections](#creating-collections)
+   - [Inserting documents](#inserting-documents)
+ - [READ](#read)
+   - [Filters](#filters)
+   - [Comparison Operators](#comparison-operators)
+   - [Logical Operators](#logical-operators)
+   - [Functions](#functions)
+   - [Miscellaneous](#miscellaneous)
+ - [UPDATE](#update)
+ - [DELETE](#delete)
+   - [Deleting documents](#deleting-documents)
+   - [Deleting collections](#deleting-collections)
+   - [Deleting databases](#deleting-databases)
+ - [Resources](#resources)
+
 ## <ins>CREATE</ins>
 
 #### Creating a database
