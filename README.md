@@ -31,7 +31,7 @@ After sucessfully entering the interactive shell try out the following stuff :
 
 ## <ins>CREATE</ins>
 
-#### Creating a database
+### Creating a database
  - To create a database enter the command `use db_name` where _db_name_ is the name of the database you want to create.
  - This command is also used to switch between databases
  - Eg:-
@@ -39,7 +39,7 @@ After sucessfully entering the interactive shell try out the following stuff :
     use cars
     ```
 
-#### List databases
+### List databases
  - To view the various databases created enter :-
     ```js
     show dbs
@@ -57,7 +57,7 @@ After sucessfully entering the interactive shell try out the following stuff :
     db
     ```
 
-#### Creating collections
+### Creating collections
  - Collections are in `mongoDB` what tables are in `SQL`.
  - The only difference is that you don't need to have a defined structure of the _column names_ and the _datatype_ those columns will have in `mongoDB` unlike `SQL`.
  - You can directly create a collection without specifying any details of the data that will be entered in it.
@@ -68,7 +68,7 @@ After sucessfully entering the interactive shell try out the following stuff :
     ```
 
 
-#### Inserting documents
+### Inserting documents
  - In `mongoDB` when you make an entry in a collection that entry is called a _document_ i.e. a _row_ in terms of `SQL`
  - You can insert a document in a collection using the command `db.collection_name.insert(data)`
  - Structure of the data in the example below :-
@@ -128,7 +128,7 @@ After sucessfully entering the interactive shell try out the following stuff :
     ```
 - This returns a properly formatted result of the `find()` output.
 
-#### Filters
+### Filters
 
  - To get the document(s) based on some filters enter the _key_ and the corresponding _value_ as the first parameter to the `find()` function.
  - Eg:- 
@@ -138,7 +138,7 @@ After sucessfully entering the interactive shell try out the following stuff :
     ```
  - You could relate this type of filtering to the _WHERE_ clause in `SQL`.
 
-#### Comparison Operators
+### Comparison Operators
 
   - Comparison operators can be used to filter documents in monogDB using the following specifiers:-
     -  **$gt** = greater than
@@ -153,7 +153,7 @@ After sucessfully entering the interactive shell try out the following stuff :
     }).pretty()
     ```
 
-#### Logical Operators
+### Logical Operators
 
  - Logical operators can be used to filter documents in mongoDB using the following specifications:-
    - **$or** = OR operation
@@ -182,7 +182,7 @@ After sucessfully entering the interactive shell try out the following stuff :
     ]}).pretty()
     ```
 
-#### Functions
+### Functions
 
  - **sort()**
     - Sort function can be used to sort the result of the query based on a key
@@ -209,7 +209,7 @@ After sucessfully entering the interactive shell try out the following stuff :
         db.car_details.find().count()
         ```
 
-#### Miscellaneous
+### Miscellaneous
 
  - **$exists**
    - To check whether a key exists in the documents in the collections the $exists specifier
@@ -279,7 +279,7 @@ After sucessfully entering the interactive shell try out the following stuff :
 
 ## <ins>DELETE</ins>
 
-#### Deleting documents
+### Deleting documents
  - One or many documents can be deleted in mongoDb using the following commands:-
    - **deleteOne()**
      - This method deletes the first document that matches the conditions specified
@@ -300,14 +300,14 @@ After sucessfully entering the interactive shell try out the following stuff :
        )
        ```
 
-#### Deleting collections
+### Deleting collections
  - To delete a collection enter `db.collection_name.drop()`
  - Eg:-
    ```js
    db.car_details.drop()
    ```
 
-#### Deleting databases
+### Deleting databases
 
  - To delete the database you are currently working on, enter :-
    ```js
