@@ -9,7 +9,7 @@
 After sucessfully entering the interactive shell try out the following stuff :
 
 ---
-
+ 
 ## Contents
  - [CREATE](#create)
    - [Creating a database](#creating-a-database)
@@ -28,7 +28,9 @@ After sucessfully entering the interactive shell try out the following stuff :
    - [Deleting collections](#deleting-collections)
    - [Deleting databases](#deleting-databases)
  - [Resources](#resources)
-
+ 
+---
+ 
 ## <ins>CREATE</ins>
 
 ### Creating a database
@@ -230,6 +232,8 @@ After sucessfully entering the interactive shell try out the following stuff :
 
         ```
 
+---
+ 
 ## <ins>UPDATE</ins>
 
  - There are 3 functions associated to updation of documents in mongoDB :-
@@ -277,6 +281,8 @@ After sucessfully entering the interactive shell try out the following stuff :
        )
        ```
 
+---
+ 
 ## <ins>DELETE</ins>
 
 ### Deleting documents
@@ -313,7 +319,7 @@ After sucessfully entering the interactive shell try out the following stuff :
    ```js
    db.dropDatabase()
    ```
-----
+---
 
 ### Resources
  - [MongoDB official Documentation](https://docs.mongodb.com/)
