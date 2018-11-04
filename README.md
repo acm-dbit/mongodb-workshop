@@ -327,4 +327,4 @@ After sucessfully entering the interactive shell try out the following stuff :
  - [Marvels of MongoDB (pluralsight) slides](https://github.com/manuabalos/Codeschool---The-Magical-Marvels-of-MongoDB)
 
 
-> **NOTE** : The official documentation is more than sufficient to get a hold of both basic and advanced concepts in mongoDB as they have an exhaustive no. of examples associated with every functionality. So, it is recommended to first have a look at the documentation before searching for a tutorial.
+> **NOTE** : The official documentation is more than sufficient to get a hold of both basic and advanced concepts in mongoDB as it has an exhaustive no. of examples associated with every functionality. So, it is recommended to first have a look at the documentation before searching for a tutorial.
