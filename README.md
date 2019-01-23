@@ -6,7 +6,7 @@
 
 > **NOTE** : Sometimes the mongod server is already running in the background in _ubuntu_. So first just try running the command mentioned in the second step i.e. `mongo`. If it doesn't work then start the server and the interactive shell one after another respectively.
 
-After sucessfully entering the interactive shell try out the following stuff :
+After successfully entering the interactive shell try out the following stuff :
 
 ---
  
