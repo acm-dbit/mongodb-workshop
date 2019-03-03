@@ -4,7 +4,7 @@
  - Start the mongoDB server using the command `mongod` in the terminal
  - Start the mongoDB interactive shell using the command `mongo` on a separate terminal.
 
-> **NOTE** : Sometimes the mongod server is already running in the background in _ubuntu_. So first just try running the command mentioned in the second step i.e. `mongo`. If it doesn't work then start the server and the interactive shell one after another respectively.
+> **NOTE** : Sometimes the mongod server is already running in the background in _ubuntu_. So first just try running the command mentioned in the second step i.e. `mongo`. If it doesn't work then start the server and the interactive shell, one after another respectively.
 
 After successfully entering the interactive shell try out the following stuff :
 
