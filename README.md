@@ -321,7 +321,7 @@ After successfully entering the interactive shell try out the following stuff :
    ```
 ---
 
-### Resources
+## Resources
  - [MongoDB official Documentation](https://docs.mongodb.com/)
  - [MongoDB Tutorials Point](https://www.tutorialspoint.com/mongodb/index.htm)
  - [Marvels of MongoDB (pluralsight) slides](https://github.com/manuabalos/Codeschool---The-Magical-Marvels-of-MongoDB)
